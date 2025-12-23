@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Classes | Excellence in Education</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #e67e22;
+            --light-bg: #f4f7f6;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--light-bg);
+        }
+
+        /* Navigation */
+        nav {
+            
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav h1 { margin: 0; font-size: 1.5rem; }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1523050853061-80e8a4ff147e?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            color: red;
+            padding: 100px 10%;
+            text-align: center;
+        }
+
+        .hero h2 { font-size: 3rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; font-style: italic; }
+
+        /* Content Sections */
+        .container { padding: 60px 10%; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Form Styling */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, select, textarea {
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        button {
+            background: var(--accent-color);
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: 0.3s;
+        }
+
+        button:hover { background: #d35400; }
+
+        .contact-info p { margin: 10px 0; font-weight: bold; }
+        
+        footer {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        .T{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h1>SRI CLASSES</h1>
+        <img src="index.png" width="120px" height="120px">
+       
+       
+        
+       
+        
+    </nav>
+    <p width="80px">Classes 1 to 10</p>
+
+
+    <section class="hero">
+        <h2>Building Foundations for a Brighter Future</h2>
+        <p class="T">Led by Miss S Jha — Where concepts meet clarity.</p>
+    </section>
+
+    <div class="container">
+        <div class="grid">
+            <section class="card">
+                <h2 style="color: var(--accent-color);">Why Choose Sri Classes?</h2>
+                <p><strong>"Education is not just about grades; it’s about unlocking your child’s hidden potential."</strong></p>
+                <ul>
+                    <li><strong>Personalized Attention:</strong> We believe every child learns differently.</li>
+                    <li><strong>Concept-Based Learning:</strong> Moving beyond rote memorization.</li>
+                    <li><strong>Regular Assessments:</strong> Weekly tests to track growth and build confidence.</li>
+                    <li><strong>Mentorship:</strong> Directed by Miss S Jha, focusing on discipline and academic excellence.</li>
+                </ul>
+                <p><em>Give your child the competitive edge they deserve from Class 1 to 10.</em></p>
+            </section>
+
+            <section class="card" id="register">
+                <h2 style="color: var(--accent-color);">Admission Inquiry</h2>
+                <form action="#">
+                    <input type="text" placeholder="Student Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="tel" placeholder="Contact Number" required>
+                    <select required>
+                        <option value="">Select Class</option>
+                        <option value="1-5">Class 1 to 5</option>
+                        <option value="6-8">Class 6 to 8</option>
+                        <option value="9-10">Class 9 to 10</option>
+                    </select>
+                    <button type="submit">Submit Registration</button>
+                </form>
+            </section>
+        </div>
+
+        <hr style="margin: 50px 0; opacity: 0.2;">
+        <div>
+                <h3>Class Timings</h3>
+                <p>sunday - Friday: 3:00 PM - 5:00 PM</p>
+                <p>No class on monday</p>
+                <p>Saturday: Special Doubt Clearing Session</p>
+            </div>
+
+        <div class="grid">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>📍 Address: muzaffarpur bihar </p>
+                <p>📞 Phone: +91 [72********]</p>
+                <p>📧 Email: contact@sriclasses.com</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sri Classes. Empowering Students under the guidance of Miss S Jha.</p>
+    </footer>
+
+</body>
+</html>
+              
